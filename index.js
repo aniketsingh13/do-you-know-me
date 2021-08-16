@@ -6,7 +6,7 @@ console.log(chalk.green("welcome "+userName+" to the quiz"+" do you know aniket 
 function play(question,answer)
 {
   var userAnswer=readlineSync.question(question);
-  if(userAnswer.toUpperCase()===answer.toUpperCase())
+  if(userAnswer===answer)
   {
     console.log(chalk.red("you are wright"));
     score=score+1;
